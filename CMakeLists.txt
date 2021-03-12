@@ -86,6 +86,7 @@ set(INSTALL_INCLUDE_DIR  "include/darknet"           CACHE PATH "Path where head
 set(INSTALL_CMAKE_DIR    "share/darknet"             CACHE PATH "Path where cmake configs will be installed")
 
 if(ENABLE_CUDA)
+  # 把CUDA安装路径下面的（我的路径是C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\visual_studio_integration\MSBuildExtensions）以上4个文件全部拷贝到C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations中
   include(CheckLanguage)
   check_language(CUDA)
   if(NOT CMAKE_CUDA_COMPILER)
@@ -123,6 +124,7 @@ else()
 endif()
 
 if(USE_INTEGRATED_LIBS)
+  # 把3rdparty\pthreads\bin\pthreadVC2.dll拷贝到生成的darknet.exe同级目录（解决：error while loading shared libraries: pthreadVC2.dll: cannot open shared object file: No such file or directory）
   set(PThreads_windows_DIR ${CMAKE_CURRENT_LIST_DIR}/3rdparty/pthreads CACHE PATH "Path where pthreads for windows can be located")
 endif()
 set(Stb_DIR ${CMAKE_CURRENT_LIST_DIR}/3rdparty/stb CACHE PATH "Path where Stb image library can be located")
@@ -134,6 +136,8 @@ if(MSVC)
   find_package(PThreads_windows REQUIRED)
 endif()
 if(ENABLE_OPENCV)
+  # 用你自己的cv路径，加入下面这一句
+  set(OpenCV_DIR D:\\opencv\\build)
   find_package(OpenCV)
   if(OpenCV_FOUND)
     if(SELECT_OPENCV_MODULES)

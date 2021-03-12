@@ -34,6 +34,10 @@ build/.ninja_deps
 build/.ninja_log
 build/Makefile
 
+**/build/*
+!**build/darknet
+.idea
+
 # OS Generated #
 .DS_Store*
 ehthumbs.db
