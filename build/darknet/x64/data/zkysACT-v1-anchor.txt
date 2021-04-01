@@ -1,0 +1,91 @@
+./darknet.exe detector calc_anchors data/zkysACT-v1.data -num_of_clusters 6 -width 416 -height 416
+ CUDA-version: 11000 (11000), cuDNN: 8.1.1, GPU count: 1  
+ OpenCV version: 3.4.13
+
+ num_of_clusters = 6, width = 416, height = 416
+ read labels from 734 images
+ loaded          image: 734      box: 1688
+ all loaded.
+
+ calculating k-means++ ...
+
+ iterations = 9
+
+
+counters_per_class = 266, 347, 255, 820
+
+ avg IoU = 63.64 %
+
+Saving anchors to the file: anchors.txt
+anchors =   8, 12,  15, 61,  44, 30,  53, 60,  28,140,  82, 87
+
+
+————————————————————————————————————————————————————————
+
+
+./darknet.exe detector calc_anchors data/zkysACT-v1.data -num_of_clusters 6 -width 448 -height 448
+ CUDA-version: 11000 (11000), cuDNN: 8.1.1, GPU count: 1  
+ OpenCV version: 3.4.13
+
+ num_of_clusters = 6, width = 448, height = 448
+ read labels from 734 images
+ loaded          image: 734      box: 1688
+ all loaded.
+
+ calculating k-means++ ...
+
+ iterations = 16
+
+
+counters_per_class = 266, 347, 255, 820
+
+ avg IoU = 64.88 %
+
+Saving anchors to the file: anchors.txt
+anchors =   8, 12,  16, 34,  20, 95,  56, 54,  36,173,  83, 91
+
+————————————————————————————————————————————————————————
+
+./darknet.exe detector calc_anchors data/zkysACT-v1.data -num_of_clusters 6 -width 480 -height 480
+ CUDA-version: 11000 (11000), cuDNN: 8.1.1, GPU count: 1  
+ OpenCV version: 3.4.13
+
+ num_of_clusters = 6, width = 480, height = 480
+ read labels from 734 images
+ loaded          image: 734      box: 1688
+ all loaded.
+
+ calculating k-means++ ...
+
+ iterations = 11
+
+
+counters_per_class = 266, 347, 255, 820
+
+ avg IoU = 62.77 %
+
+Saving anchors to the file: anchors.txt
+anchors =   9, 14,  17, 68,  52, 40,  31,144,  71, 75,  71,225
+
+————————————————————————————————————————————————————————
+
+./darknet.exe detector calc_anchors data/zkysACT-v1.data -num_of_clusters 6 -width 512 -height 512
+ CUDA-version: 11000 (11000), cuDNN: 8.1.1, GPU count: 1  
+ OpenCV version: 3.4.13
+
+ num_of_clusters = 6, width = 512, height = 512
+ read labels from 734 images
+ loaded          image: 734      box: 1688
+ all loaded.
+
+ calculating k-means++ ...
+
+ iterations = 23
+
+
+counters_per_class = 266, 347, 255, 820
+
+ avg IoU = 65.58 %
+
+Saving anchors to the file: anchors.txt
+anchors =  10, 13,  16, 40,  58, 44,  24,112,  77, 81,  55,219
