@@ -60,3 +60,4 @@ uselib
 uselib_track
 darknet
 vcpkg/
+*.mp4
